@@ -12,11 +12,17 @@ body {
     max-height: 100%;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+} 
+
 header{
     display: flex;
     flex-direction: row;
     padding: 10px 60px;
     background-color: rgb(72, 72, 73);
+    border: 1px solid white;
 }
 
 .header-left{
@@ -39,65 +45,117 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 1;
 }
 
 .box-dark-grey{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(72, 72, 73);
-    padding: 10px 100px;
-    height:auto;
+    padding: 50px;
 }
 
 .box-dark-grey-left{
     display: row;
-    margin-right: auto;
+    /* margin-right: auto; */
     width: 500px;
+    border: 1px paleturquoise solid;
 }
 
 .box-dark-grey-left-text{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 h1{
     padding: 0px;
 }
 .box-dark-grey-button{
-    height:50;
-    width: 50;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
 .box-dark-grey-right{
     display: flex;
-    margin-left: auto;
+    /* margin-left: auto; */
+    border: 1px paleturquoise solid;
 }
 
 .box-white-top{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
-    height: 100px;
+    height: 300px;
     flex-grow: 1;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.box-white-top-text{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.box-light-grey{
+
+.box-white-top-boxes{
     display: flex;
     flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    padding-left: auto;
+    padding-right: auto;
+    gap: 75px;
+    margin-left: -40px;
+
+}
+
+.box-white-top-boxes-images{
+    width: 100px;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* third box */
+.box-light-grey{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(140, 140, 143);
-    height: 100px;
+    height: 300px;
     flex-grow: 1;
+    padding-left: 250px;
+    padding-right: 250px;
     
 }
+
+.box-light-grey-quote{
+    display:flex;
+    flex-direction: row;
+}
+
+.box-dark-grey-left-text-author{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .box-white-bottom{
     display: flex;
     flex-direction: row;
     background-color: white;
-    height: 100px;
+    height: 300px;
     flex-grow: 1;
 }
 
